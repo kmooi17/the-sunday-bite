@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <!-- Logo -->
+    <!--Logo-->
     <a
       class="navbar-brand"
       href="#"
@@ -11,7 +11,7 @@
         loading="lazy"
       /></a>
 
-    <!-- Toggle Button -->
+    <!--Toggle Button-->
     <button
       class="navbar-toggler"
       type="button"
@@ -22,7 +22,7 @@
       <i class="fas fa-bars"></i>
     </button>
 
-    <!-- Links -->
+    <!--Links-->
     <div
       class="collapse navbar-collapse "
       id="navbarNavAltMarkup"
@@ -52,69 +52,90 @@
 </nav>
 
 <router-outlet>
-  <!-- Background image -->
-  <div
-    id="intro"
-    class="bg-image shadow-2-strong"
-  >
-    <div
-      class="mask"
-      style="background-color: rgba(0, 0, 0, 0.8);"
-    >
-      <div class="container d-flex align-items-center justify-content-center text-center h-100">
-        <div class="text-white">
-          <h1 class="mb-3">Learn Bootstrap 5 with MDB</h1>
-          <h5 class="mb-4">Best & free guide of responsive web design</h5>
-          <a
-            class="btn btn-outline-light btn-lg m-2"
-            href="https://www.youtube.com/watch?v=c9B4TPnak1A"
-            role="button"
-            rel="nofollow"
-            target="_blank"
-          >Start tutorial</a>
-          <a
-            class="btn btn-outline-light btn-lg m-2"
-            href="https://mdbootstrap.com/docs/standard/"
-            target="_blank"
-            role="button"
-          >Download MDB UI KIT</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Background image -->
-
-  <!--Main layout-->
   <main class="mt-5">
     <div class="container">
-      <!--Section: Content-->
+
+      <!--Section: Start Main-->
       <section>
         <div class="row">
+          <!--Start Description-->
+          <div class="col-md-6 gx-5 mb-4">
+            <h1><strong>The Sunday Bite</strong></h1>
+            <h3>The most delicious home made mini cakes that will make your taste buds go crazy!</h3>
+            <br /><br />
+            <p><strong>Doloremque vero ex debitis veritatis?</strong></p>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod itaque voluptate
+              nesciunt laborum incidunt. Officia, quam consectetur. Earum eligendi aliquam illum
+              alias, unde optio accusantium soluta, iusto molestiae adipisci et?
+            </p>
+          </div>
+
+          <!--Start Image Right-->
           <div class="col-md-6 gx-5 mb-4">
             <div
               class="bg-image hover-overlay ripple shadow-2-strong rounded-5"
               data-mdb-ripple-color="light"
             >
               <img
-                src="https://mdbootstrap.com/img/new/slides/031.jpg"
+                src="assets/images/side-view.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div
+                class="mask"
+                style="background-color: rgba(251, 251, 251, 0.15);"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section: End Main-->
+
+      <hr class="my-5" />
+
+      <!--Section: Start About-->
+      <section>
+        <div class="row">
+          <!--About Image-->
+          <div class="col-md-6 gx-5 mb-4">
+            <div
+              class="bg-image hover-overlay ripple shadow-2-strong rounded-5"
+              data-mdb-ripple-color="light"
+            >
+              <img
+                src="assets/images/demi.jpg"
+                alt=""
                 class="img-fluid"
               />
-              <a href="#!">
-                <div
-                  class="mask"
-                  style="background-color: rgba(251, 251, 251, 0.15);"
-                ></div>
-              </a>
+              <div
+                class="mask"
+                style="background-color: rgba(251, 251, 251, 0.15);"
+              ></div>
             </div>
           </div>
 
+          <!--About Description-->
           <div class="col-md-6 gx-5 mb-4">
-            <h4><strong>Facilis consequatur eligendi</strong></h4>
+            <h4><strong>A little about me and why I love baking:</strong></h4>
             <p class="text-muted">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
               eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
               sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis.
             </p>
+
+            <!-- TODO: Put contact details here?-->
+            <div
+              class="my-5"
+              style="text-align: center;"
+            >
+              <img
+                src="assets/images/background-2.jpg"
+                alt=""
+                class="img-fluid rounded"
+              />
+            </div>
+
             <p><strong>Doloremque vero ex debitis veritatis?</strong></p>
             <p class="text-muted">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod itaque voluptate
@@ -124,15 +145,15 @@
           </div>
         </div>
       </section>
-      <!--Section: Content-->
+      <!--Section: End About-->
 
       <hr class="my-5" />
 
-      <!--Section: Content-->
+      <!--Section: Start Cakes-->
       <section class="text-center">
-        <h4 class="mb-5"><strong>Facilis consequatur eligendi</strong></h4>
-
+        <h4 class="mb-5"><strong>Cakes</strong></h4>
         <div class="row">
+          <!--Redcakes-->
           <div class="col-lg-4 col-md-12 mb-4">
             <div class="card">
               <div
@@ -142,28 +163,24 @@
                 <img
                   src="https://mdbootstrap.com/img/new/standard/nature/184.jpg"
                   class="img-fluid"
+                  alt=""
                 />
-                <a href="#!">
-                  <div
-                    class="mask"
-                    style="background-color: rgba(251, 251, 251, 0.15);"
-                  ></div>
-                </a>
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.15);"
+                ></div>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Red cakes</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up the bulk of the
                   card's content.
                 </p>
-                <a
-                  href="#!"
-                  class="btn btn-primary"
-                >Button</a>
               </div>
             </div>
           </div>
 
+          <!--Snowballs-->
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card">
               <div
@@ -173,28 +190,24 @@
                 <img
                   src="https://mdbootstrap.com/img/new/standard/nature/023.jpg"
                   class="img-fluid"
+                  alt=""
                 />
-                <a href="#!">
-                  <div
-                    class="mask"
-                    style="background-color: rgba(251, 251, 251, 0.15);"
-                  ></div>
-                </a>
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.15);"
+                ></div>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Snow balls</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up the bulk of the
                   card's content.
                 </p>
-                <a
-                  href="#!"
-                  class="btn btn-primary"
-                >Button</a>
               </div>
             </div>
           </div>
 
+          <!--Lamingtons-->
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card">
               <div
@@ -204,41 +217,36 @@
                 <img
                   src="https://mdbootstrap.com/img/new/standard/nature/111.jpg"
                   class="img-fluid"
+                  alt=""
                 />
-                <a href="#!">
-                  <div
-                    class="mask"
-                    style="background-color: rgba(251, 251, 251, 0.15);"
-                  ></div>
-                </a>
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.15);"
+                ></div>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Lamingtons</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up the bulk of the
                   card's content.
                 </p>
-                <a
-                  href="#!"
-                  class="btn btn-primary"
-                >Button</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!--Section: Content-->
+      <!--Section: End Cakes-->
 
       <hr class="my-5" />
 
-      <!--Section: Content-->
+      <!--Section: Start Order Form-->
       <section class="mb-5">
-        <h4 class="mb-5 text-center"><strong>Facilis consequatur eligendi</strong></h4>
+        <h4 class="mb-5 text-center"><strong>Order Form</strong></h4>
 
         <div class="row d-flex justify-content-center">
           <div class="col-md-6">
             <form>
-              <!-- 2 column grid layout with text inputs for the first and last names -->
+              <!--2 column grid layout with text inputs for the first and last names-->
               <div class="row mb-4">
                 <div class="col">
                   <div class="form-outline">
@@ -268,7 +276,7 @@
                 </div>
               </div>
 
-              <!-- Email input -->
+              <!--Email input-->
               <div class="form-outline mb-4">
                 <input
                   type="email"
@@ -281,7 +289,7 @@
                 >Email address</label>
               </div>
 
-              <!-- Password input -->
+              <!--Password input-->
               <div class="form-outline mb-4">
                 <input
                   type="password"
@@ -294,7 +302,7 @@
                 >Password</label>
               </div>
 
-              <!-- Checkbox -->
+              <!--Checkbox-->
               <div class="form-check d-flex justify-content-center mb-4">
                 <input
                   class="form-check-input me-2"
@@ -311,7 +319,7 @@
                 </label>
               </div>
 
-              <!-- Submit button -->
+              <!--Submit button-->
               <button
                 type="submit"
                 class="btn btn-primary btn-block mb-4"
@@ -319,7 +327,7 @@
                 Sign up
               </button>
 
-              <!-- Register buttons -->
+              <!--Register buttons-->
               <div class="text-center">
                 <p>or sign up with:</p>
                 <button
@@ -354,35 +362,50 @@
           </div>
         </div>
       </section>
-      <!--Section: Content-->
+      <!--Section: End Order Form-->
+
+      <hr class="my-5" />
+
+      <!--Section: Start Testimonials-->
+      <section class="mb-5">
+        <h4 class="mb-5 text-center"><strong>Testimonials</strong></h4>
+
+        <mdb-carousel>
+          <mdb-carousel-item>
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/slides/041.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </mdb-carousel-item>
+
+          <mdb-carousel-item>
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/slides/042.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </mdb-carousel-item>
+
+          <mdb-carousel-item>
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/slides/043.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </mdb-carousel-item>
+        </mdb-carousel>
+      </section>
+      <!--Section: End Testimonials-->
     </div>
   </main>
-  <!--Main layout-->
+
+  <hr class="m-0" />
 
   <!--Footer-->
   <footer class="bg-light text-lg-start">
-    <div class="py-4 text-center">
-      <a
-        role="button"
-        class="btn btn-primary btn-lg m-2"
-        href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA"
-        rel="nofollow"
-        target="_blank"
-      >
-        Learn Bootstrap 5
-      </a>
-      <a
-        role="button"
-        class="btn btn-primary btn-lg m-2"
-        href="https://mdbootstrap.com/docs/standard/"
-        target="_blank"
-      >
-        Download MDB UI KIT
-      </a>
-    </div>
 
-    <hr class="m-0" />
-
+    <!--TODO: Put Ad here?-->
     <div class="text-center py-4 align-items-center">
       <p>Follow MDB on social media</p>
       <a
@@ -423,18 +446,6 @@
       </a>
     </div>
 
-    <!-- Copyright -->
-    <div
-      class="text-center p-3"
-      style="background-color: rgba(0, 0, 0, 0.2);"
-    >
-      © 2020 Copyright:
-      <a
-        class="text-dark"
-        href="https://mdbootstrap.com/"
-      >MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
   </footer>
   <!--Footer-->
 </router-outlet>
