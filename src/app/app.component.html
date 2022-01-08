@@ -1,17 +1,7 @@
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+<!-- TODO: Change colour of nav -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light nav-colour">
   <div class="container-fluid">
-    <!--Logo-->
-    <a
-      class="navbar-brand"
-      href="#"
-    ><img
-        src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png"
-        height="30"
-        alt=""
-        loading="lazy"
-      /></a>
 
-    <!--Toggle Button-->
     <button
       class="navbar-toggler"
       type="button"
@@ -22,7 +12,7 @@
       <i class="fas fa-bars"></i>
     </button>
 
-    <!--Links-->
+    <!-- Links -->
     <div
       class="collapse navbar-collapse "
       id="navbarNavAltMarkup"
@@ -32,128 +22,142 @@
       <div class="navbar-nav ms-auto mb-2 mb-lg-0">
         <a
           class="nav-link"
-          href="#"
+          href="#home"
+        >Home</a>
+        <a
+          class="nav-link"
+          href="#about"
         >About</a>
         <a
           class="nav-link"
-          href="#"
-        >Cakes</a>
+          href="#cookies"
+        >Gourmet Cookies</a>
+        <a
+          class="nav-link"
+          href="#contact"
+        >Contact</a>
+        <!-- TODO: Link to ordering app -->
         <a
           class="nav-link"
           href="#"
-        >Order Form</a>
-        <a
+        >Order App</a>
+
+        <!-- TODO: When we have enough -->
+        <!-- <a
           class="nav-link"
-          href="#"
-        >Testimonials</a>
+          href="#testimonials"
+        >Testimonials</a> -->
       </div>
     </div>
   </div>
 </nav>
 
+<!-- TODO: To top button -->
+<!-- TODO: Add SEO -->
+<!-- TODO: Choose new font -->
 <router-outlet>
   <main class="mt-5">
     <div class="container">
 
-      <!--Section: Start Main-->
-      <section>
+      <!-- Section: Start Main -->
+      <section id="home">
         <div class="row">
-          <!--Start Description-->
-          <div class="col-md-6 gx-5 mb-4">
-            <h1><strong>The Sunday Bite</strong></h1>
-            <h3>The most delicious home made mini cakes that will make your taste buds go crazy!</h3>
-            <br /><br />
-            <p><strong>Doloremque vero ex debitis veritatis?</strong></p>
+          <!-- Start Description -->
+          <div class="col-md-8 gx-5 mb-4">
+            <img
+              src="assets/images/logo.png"
+              class="img-fluid"
+              alt=""
+            />
+            <h2 class="my-4">The most delicious home-made gourmet cookies that will
+              make your taste buds go
+              crazy.</h2>
+            <p><strong>13 unique flavours!</strong></p>
             <p class="text-muted">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod itaque voluptate
-              nesciunt laborum incidunt. Officia, quam consectetur. Earum eligendi aliquam illum
-              alias, unde optio accusantium soluta, iusto molestiae adipisci et?
+              The Everyday Bite is literally for everyone for every type of day. This will cheer you up when you are
+              feeling a bit down. This is a great cheat day snack after your hectic eating plan. This will satisfy all
+              of your cravings instantly.
             </p>
           </div>
 
-          <!--Start Image Right-->
-          <div class="col-md-6 gx-5 mb-4">
-            <div
-              class="bg-image hover-overlay ripple shadow-2-strong rounded-5"
-              data-mdb-ripple-color="light"
-            >
-              <img
-                src="assets/images/side-view.jpg"
-                class="img-fluid"
-                alt=""
-              />
+          <!-- Start Image Right -->
+          <div class="col-md-4 gx-5 mb-4">
+            <div class="card">
               <div
-                class="mask"
-                style="background-color: rgba(251, 251, 251, 0.15);"
-              ></div>
+                class="bg-image hover-overlay ripple"
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  src="assets/images/main-img.jpg"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="mask img-mask"></div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <!--Section: End Main-->
+      <!-- Section: End Main -->
 
-      <hr class="my-5" />
+      <hr
+        id="about"
+        class="my-5"
+      />
 
-      <!--Section: Start About-->
+      <!-- Section: Start About -->
       <section>
         <div class="row">
-          <!--About Image-->
-          <div class="col-md-6 gx-5 mb-4">
-            <div
-              class="bg-image hover-overlay ripple shadow-2-strong rounded-5"
-              data-mdb-ripple-color="light"
-            >
-              <img
-                src="assets/images/demi.jpg"
-                alt=""
-                class="img-fluid"
-              />
+          <!-- About Image -->
+          <div class="col-md-4 gx-5 mb-4">
+            <div class="card">
               <div
-                class="mask"
-                style="background-color: rgba(251, 251, 251, 0.15);"
-              ></div>
+                class="bg-image hover-overlay ripple"
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  src="assets/images/demi.jpg"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="mask img-mask"></div>
+              </div>
             </div>
           </div>
 
-          <!--About Description-->
-          <div class="col-md-6 gx-5 mb-4">
+          <!-- About Description -->
+          <div class="col-md-8 gx-5 mb-4">
             <h4><strong>A little about me and why I love baking:</strong></h4>
             <p class="text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
-              eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
-              sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis.
+              I love baking because it's a core passion of mine. I enjoy people's reactions when they bite into my
+              treats. It always puts a massive smile of my face. My dream is to have my own bakery one day so I can put
+              smiles on all of my customer's faces. My specialties include the gourmet cookies, however I do also make
+              lamingtons, red cakes, snowballs and cake pops on request.
             </p>
 
-            <!-- TODO: Put contact details here?-->
-            <div
-              class="my-5"
-              style="text-align: center;"
-            >
+            <div class="my-5 text-center">
               <img
-                src="assets/images/background-2.jpg"
+                src="assets/images/side-view.jpg"
                 alt=""
-                class="img-fluid rounded"
+                class="rounded-circle"
+                width="400px"
               />
             </div>
-
-            <p><strong>Doloremque vero ex debitis veritatis?</strong></p>
-            <p class="text-muted">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod itaque voluptate
-              nesciunt laborum incidunt. Officia, quam consectetur. Earum eligendi aliquam illum
-              alias, unde optio accusantium soluta, iusto molestiae adipisci et?
-            </p>
           </div>
         </div>
       </section>
-      <!--Section: End About-->
+      <!-- Section: End About -->
 
-      <hr class="my-5" />
+      <hr
+        id="cookies"
+        class="my-5"
+      />
 
-      <!--Section: Start Cakes-->
+      <!-- Section: Start Cookies -->
       <section class="text-center">
-        <h4 class="mb-5"><strong>Cakes</strong></h4>
+        <h4 class="mb-5"><strong>Gourmet Cookies</strong></h4>
         <div class="row">
-          <!--Redcakes-->
+          <!-- -->
           <div class="col-lg-4 col-md-12 mb-4">
             <div class="card">
               <div
@@ -165,10 +169,7 @@
                   class="img-fluid"
                   alt=""
                 />
-                <div
-                  class="mask"
-                  style="background-color: rgba(251, 251, 251, 0.15);"
-                ></div>
+                <div class="mask img-mask"></div>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Red cakes</h5>
@@ -180,7 +181,7 @@
             </div>
           </div>
 
-          <!--Snowballs-->
+          <!-- -->
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card">
               <div
@@ -192,10 +193,7 @@
                   class="img-fluid"
                   alt=""
                 />
-                <div
-                  class="mask"
-                  style="background-color: rgba(251, 251, 251, 0.15);"
-                ></div>
+                <div class="mask img-mask"></div>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Snow balls</h5>
@@ -207,7 +205,7 @@
             </div>
           </div>
 
-          <!--Lamingtons-->
+          <!-- -->
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card">
               <div
@@ -219,10 +217,229 @@
                   class="img-fluid"
                   alt=""
                 />
-                <div
-                  class="mask"
-                  style="background-color: rgba(251, 251, 251, 0.15);"
-                ></div>
+                <div class="mask img-mask"></div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Lamingtons</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- -->
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div
+                class="bg-image hover-overlay ripple"
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  src="https://mdbootstrap.com/img/new/standard/nature/184.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="mask img-mask"></div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Red cakes</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div
+                class="bg-image hover-overlay ripple"
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  src="https://mdbootstrap.com/img/new/standard/nature/023.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="mask img-mask"></div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Snow balls</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div
+                class="bg-image hover-overlay ripple"
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  src="https://mdbootstrap.com/img/new/standard/nature/111.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="mask img-mask"></div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Lamingtons</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- -->
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div
+                class="bg-image hover-overlay ripple"
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  src="https://mdbootstrap.com/img/new/standard/nature/184.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="mask img-mask"></div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Red cakes</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div
+                class="bg-image hover-overlay ripple"
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  src="https://mdbootstrap.com/img/new/standard/nature/023.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="mask img-mask"></div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Snow balls</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div
+                class="bg-image hover-overlay ripple"
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  src="https://mdbootstrap.com/img/new/standard/nature/111.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="mask img-mask"></div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Lamingtons</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- -->
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div
+                class="bg-image hover-overlay ripple"
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  src="https://mdbootstrap.com/img/new/standard/nature/184.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="mask img-mask"></div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Red cakes</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div
+                class="bg-image hover-overlay ripple"
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  src="https://mdbootstrap.com/img/new/standard/nature/023.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="mask img-mask"></div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Snow balls</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div
+                class="bg-image hover-overlay ripple"
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  src="https://mdbootstrap.com/img/new/standard/nature/111.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="mask img-mask"></div>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Lamingtons</h5>
@@ -235,139 +452,39 @@
           </div>
         </div>
       </section>
-      <!--Section: End Cakes-->
+      <!-- Section: End Cookies -->
 
       <hr class="my-5" />
 
-      <!--Section: Start Order Form-->
-      <section class="mb-5">
-        <h4 class="mb-5 text-center"><strong>Order Form</strong></h4>
-
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-6">
-            <form>
-              <!--2 column grid layout with text inputs for the first and last names-->
-              <div class="row mb-4">
-                <div class="col">
-                  <div class="form-outline">
-                    <input
-                      type="text"
-                      id="form3Example1"
-                      class="form-control"
-                    />
-                    <label
-                      class="form-label"
-                      for="form3Example1"
-                    >First name</label>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="form-outline">
-                    <input
-                      type="text"
-                      id="form3Example2"
-                      class="form-control"
-                    />
-                    <label
-                      class="form-label"
-                      for="form3Example2"
-                    >Last name</label>
-                  </div>
-                </div>
-              </div>
-
-              <!--Email input-->
-              <div class="form-outline mb-4">
-                <input
-                  type="email"
-                  id="form3Example3"
-                  class="form-control"
-                />
-                <label
-                  class="form-label"
-                  for="form3Example3"
-                >Email address</label>
-              </div>
-
-              <!--Password input-->
-              <div class="form-outline mb-4">
-                <input
-                  type="password"
-                  id="form3Example4"
-                  class="form-control"
-                />
-                <label
-                  class="form-label"
-                  for="form3Example4"
-                >Password</label>
-              </div>
-
-              <!--Checkbox-->
-              <div class="form-check d-flex justify-content-center mb-4">
-                <input
-                  class="form-check-input me-2"
-                  type="checkbox"
-                  value=""
-                  id="form2Example3"
-                  checked
-                />
-                <label
-                  class="form-check-label"
-                  for="form2Example3"
-                >
-                  Subscribe to our newsletter
-                </label>
-              </div>
-
-              <!--Submit button-->
-              <button
-                type="submit"
-                class="btn btn-primary btn-block mb-4"
-              >
-                Sign up
-              </button>
-
-              <!--Register buttons-->
-              <div class="text-center">
-                <p>or sign up with:</p>
-                <button
-                  type="button"
-                  class="btn btn-primary btn-floating mx-1"
-                >
-                  <i class="fab fa-facebook-f"></i>
-                </button>
-
-                <button
-                  type="button"
-                  class="btn btn-primary btn-floating mx-1"
-                >
-                  <i class="fab fa-google"></i>
-                </button>
-
-                <button
-                  type="button"
-                  class="btn btn-primary btn-floating mx-1"
-                >
-                  <i class="fab fa-twitter"></i>
-                </button>
-
-                <button
-                  type="button"
-                  class="btn btn-primary btn-floating mx-1"
-                >
-                  <i class="fab fa-github"></i>
-                </button>
-              </div>
-            </form>
+      <!-- Section: Start Contact -->
+      <section id="contact">
+        <div class="row text-center align-items-center">
+          <div class="col-lg-4 col-md-6 py-4">
+            <h4>Address:</h4>
+            <p>169 Montrose Avenue, Northgate, Randburg, 2162</p>
+          </div>
+          <div class="col-lg-4 col-md-6 py-4">
+            <h4>Contact:</h4>
+            <p>067 037 5788 | 074 3709980</p>
+            <p>the.everyday.bite.sa@gmail.com</p>
+          </div>
+          <div class="col-lg-4 col-md-6 py-4">
+            <h4>Social:</h4>
+            <a
+              href="https://www.instagram.com/the_everyday_bite/"
+              class="m-1"
+              rel="nofollow"
+              target="_blank"
+            >
+              <i class="fab fa-instagram fa-2x icon-colour"></i>
+            </a>
           </div>
         </div>
       </section>
-      <!--Section: End Order Form-->
+      <!-- Section: End Contact -->
 
-      <hr class="my-5" />
-
-      <!--Section: Start Testimonials-->
-      <section class="mb-5">
+      <!-- Section: Start Testimonials TODO: When we have enough -->
+      <!-- <section class="mb-5">
         <h4 class="mb-5 text-center"><strong>Testimonials</strong></h4>
 
         <mdb-carousel>
@@ -395,57 +512,18 @@
             />
           </mdb-carousel-item>
         </mdb-carousel>
-      </section>
-      <!--Section: End Testimonials-->
+      </section> -->
+      <!-- Section: End Testimonials -->
     </div>
   </main>
 
   <hr class="m-0" />
 
-  <!--Footer-->
-  <footer class="bg-light text-lg-start">
-
-    <!--TODO: Put Ad here?-->
+  <!-- Footer -->
+  <footer class="text-lg-start nav-colour">
     <div class="text-center py-4 align-items-center">
-      <p>Follow MDB on social media</p>
-      <a
-        href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA"
-        class="btn btn-primary m-1"
-        role="button"
-        rel="nofollow"
-        target="_blank"
-      >
-        <i class="fab fa-youtube"></i>
-      </a>
-      <a
-        href="https://www.facebook.com/mdbootstrap"
-        class="btn btn-primary m-1"
-        role="button"
-        rel="nofollow"
-        target="_blank"
-      >
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a
-        href="https://twitter.com/MDBootstrap"
-        class="btn btn-primary m-1"
-        role="button"
-        rel="nofollow"
-        target="_blank"
-      >
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a
-        href="https://github.com/mdbootstrap/mdb-ui-kit"
-        class="btn btn-primary m-1"
-        role="button"
-        rel="nofollow"
-        target="_blank"
-      >
-        <i class="fab fa-github"></i>
-      </a>
+      <i>Created by Hybrid Apex Software Technologies (H.A.S.T.)</i>
     </div>
-
   </footer>
-  <!--Footer-->
+  <!-- Footer -->
 </router-outlet>

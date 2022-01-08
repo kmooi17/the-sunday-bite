@@ -19,6 +19,7 @@ import { MdbScrollspyModule } from 'mdb-angular-ui-kit/scrollspy';
 import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const MdbModules = [
   MdbAccordionModule,
@@ -45,7 +46,9 @@ const MdbModules = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MdbModules
+    MdbModules,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

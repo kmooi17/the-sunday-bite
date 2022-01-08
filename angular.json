@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "the-sunday-bite": {
+    "the-everyday-bite": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/the-sunday-bite",
+            "outputPath": "dist/the-everyday-bite",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -36,8 +36,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -72,18 +71,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "the-sunday-bite:build"
+            "browserTarget": "the-everyday-bite:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "the-sunday-bite:build:production"
+              "browserTarget": "the-everyday-bite:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "the-sunday-bite:build"
+            "browserTarget": "the-everyday-bite:build"
           }
         },
         "test": {
@@ -120,16 +119,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "the-sunday-bite:serve"
+            "devServerTarget": "the-everyday-bite:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "the-sunday-bite:serve:production"
+              "devServerTarget": "the-everyday-bite:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "the-sunday-bite"
+  "defaultProject": "the-everyday-bite"
 }

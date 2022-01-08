@@ -1,5 +1,5 @@
 {
-  "name": "the-sunday-bite",
+  "name": "the-everyday-bite",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -20,8 +20,8 @@
     "@angular/platform-browser": "~11.2.8",
     "@angular/platform-browser-dynamic": "~11.2.8",
     "@angular/router": "~11.2.8",
-    "@fortawesome/fontawesome-free": "^5.6.3",
-    "@types/chart.js": "^2.9.34",
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@types/chart.js": "^2.9.35",
     "angular-bootstrap-md": "^11.1.0",
     "animate.css": "^3.7.2",
     "chart.js": "^2.9.4",
