@@ -63,15 +63,15 @@
             <img
               src="assets/images/logo.png"
               class="img-fluid"
-              alt=""
+              alt="logo"
             />
             <h2 class="my-4">The most delicious home-made gourmet cookies that will
               make your taste buds go
               crazy.</h2>
             <p><strong>13 unique flavours!</strong></p>
             <p class="text-muted">
-              The Everyday Bite is literally for everyone for every type of day. This will cheer you up when you are
-              feeling a bit down. This is a great cheat day snack after your hectic eating plan. This will satisfy all
+              The Everyday Bite is literally for everyone for every type of day. We will cheer you up if you are
+              feeling a bit down. This is a great cheat day snack after your hectic eating plan. We will satisfy all
               of your cravings instantly.
             </p>
           </div>
@@ -86,7 +86,7 @@
                 <img
                   src="assets/images/main-img.jpg"
                   class="card-img-top"
-                  alt=""
+                  alt="main image"
                 />
                 <div class="mask img-mask"></div>
               </div>
@@ -114,7 +114,7 @@
                 <img
                   src="assets/images/demi.jpg"
                   class="card-img-top"
-                  alt=""
+                  alt="baker profile picture"
                 />
                 <div class="mask img-mask"></div>
               </div>
@@ -125,8 +125,9 @@
           <div class="col-md-8 gx-5 mb-4">
             <h4><strong>A little about me and why I love baking:</strong></h4>
             <p class="text-muted">
-              I love baking because it's a core passion of mine. I enjoy people's reactions when they bite into my
-              treats. It always puts a massive smile of my face. My dream is to have my own bakery one day so I can put
+              My name is Demi Kirtsen Mooi, I am a full-time wife, mother and teacher. I love baking because it's a core
+              passion of mine. I enjoy people's reactions when they bite into my
+              treats. It always puts a massive smile on my face. My dream is to have my own bakery one day so I can put
               smiles on all of my customer's faces. My specialties include the gourmet cookies, however I do also make
               lamingtons, red cakes, snowballs and cake pops on request.
             </p>
@@ -134,7 +135,7 @@
             <div class="my-5 text-center">
               <img
                 src="assets/images/side-view.jpg"
-                alt=""
+                alt="other baking goods"
                 class="rounded-circle"
                 width="400px"
               />
@@ -153,470 +154,34 @@
       <section class="text-center">
         <h4 class="mb-5"><strong>Gourmet Cookies</strong></h4>
         <div class="row">
-          <!-- Astros -->
-          <div class="col-lg-4 col-md-12 mb-4">
+          <div
+            class="col-lg-4 col-md-6 mb-4"
+            *ngFor="let item of cookies"
+          >
             <div class="card">
               <div
                 class="bg-image hover-overlay ripple"
                 data-mdb-ripple-color="light"
               >
                 <img
-                  src="assets/images/astros.jpg"
+                  [src]="'assets/images/' + item.image + '.jpg'"
                   class="img-fluid"
-                  alt=""
+                  alt="cookie image"
                 />
                 <div class="mask img-mask"></div>
               </div>
-              <div class="card-body">
-                <h5 class="card-title">Astros</h5>
-                <p class="card-text">
-                  A vanilla soft cookie with the most amount of astros you can imagine, topped off with velvet cream
-                  cheese frosting with a twist.
-                </p>
-                <table class="table table-sm">
-                  <thead>
-                    <tr>
-                      <th scope="col">6</th>
-                      <th scope="col">12</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>R50</td>
-                      <td>R90</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-          <!-- Birthday Cake Milkshake-->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
               <div
-                class="bg-image hover-overlay ripple"
-                data-mdb-ripple-color="light"
+                class="card-body"
+                [class]="item.class"
               >
-                <img
-                  src="assets/images/bday-cake.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="mask img-mask"></div>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Birthday Cake Milkshake</h5>
+                <h5 class="card-title">{{ item.flavour }}</h5>
                 <p class="card-text">
-                  Your childhood dream in a cookie. It tastes just like your mom's cake batter, topped with the best
-                  tasting cream cheese frosting.
+                  {{ item.description }}
                 </p>
-                <table class="table table-sm">
-                  <thead>
-                    <tr>
-                      <th scope="col">6</th>
-                      <th scope="col">12</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>R45</td>
-                      <td>R80</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-          <!-- Candyfloss -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div
-                class="bg-image hover-overlay ripple"
-                data-mdb-ripple-color="light"
-              >
-                <img
-                  src="assets/images/candy-floss.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="mask img-mask"></div>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Candy Floss</h5>
-                <p class="card-text">
-                  Have you ever had a carnival in your mouth? Well now you can! You think it tastes great... wait until
-                  you smell it.
-                </p>
-                <table class="table table-sm">
-                  <thead>
-                    <tr>
-                      <th scope="col">6</th>
-                      <th scope="col">12</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>R50</td>
-                      <td>R90</td>
-                    </tr>
-                  </tbody>
-                </table>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="row">
-          <!-- Death by Chocolate -->
-          <div class="col-lg-4 col-md-12 mb-4">
-            <div class="card">
-              <div
-                class="bg-image hover-overlay ripple"
-                data-mdb-ripple-color="light"
-              >
-                <img
-                  src="assets/images/choc.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="mask img-mask"></div>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Death by Chocolate</h5>
-                <p class="card-text">
-                  Attention all choco-holics! Chocolate three ways, sounds like a party at your place. A bite to die
-                  for worth every moment on the hips.
-                </p>
-                <table class="table table-sm">
-                  <thead>
-                    <tr>
-                      <th scope="col">6</th>
-                      <th scope="col">12</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>R45</td>
-                      <td>R85</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-          <!-- Cappuccino -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div
-                class="bg-image hover-overlay ripple"
-                data-mdb-ripple-color="light"
-              >
-                <img
-                  src="assets/images/coffee.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="mask img-mask"></div>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Cappuccino</h5>
-                <p class="card-text">
-                  Coffee lovers, this one is for you. Have you ever wanted to eat your coffee instead of drink it? Now's
-                  your chance.
-                </p>
-                <table class="table table-sm">
-                  <thead>
-                    <tr>
-                      <th scope="col">6</th>
-                      <th scope="col">12</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>R45</td>
-                      <td>R85</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-          <!-- Choc Mint -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div
-                class="bg-image hover-overlay ripple"
-                data-mdb-ripple-color="light"
-              >
-                <img
-                  src="assets/images/mint.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="mask img-mask"></div>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Choc-Mint</h5>
-                <p class="card-text">
-                  Love chocolate but find it too sweet? This is the perfect balance. Chocolate & Mint - Name a better
-                  duo.
-                </p>
-                <table class="table table-sm">
-                  <thead>
-                    <tr>
-                      <th scope="col">6</th>
-                      <th scope="col">12</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>R40</td>
-                      <td>R80</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-12 mb-4">
-            <div class="card">
-              <div
-                class="bg-image hover-overlay ripple"
-                data-mdb-ripple-color="light"
-              >
-                <img
-                  src="assets/images/nutella.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="mask img-mask"></div>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Nutella</h5>
-                <p class="card-text">
-                  Every Nutella lover's dream in one cookie, topped with the smoothest Nutella frosting & strawberries
-                  just to balance it.
-                </p>
-                <table class="table table-sm">
-                  <thead>
-                    <tr>
-                      <th scope="col">6</th>
-                      <th scope="col">12</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>R55</td>
-                      <td>R95</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-          <!-- Oreo Milkshake-->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div
-                class="bg-image hover-overlay ripple"
-                data-mdb-ripple-color="light"
-              >
-                <img
-                  src="assets/images/oreos.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="mask img-mask"></div>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Oreo Milkshake</h5>
-                <p class="card-text">
-                  This cookie came to shake your taste buds awake. Two cookies for the price of one. A win win kind of
-                  situation.
-                </p>
-                <table class="table table-sm">
-                  <thead>
-                    <tr>
-                      <th scope="col">6</th>
-                      <th scope="col">12</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>R50</td>
-                      <td>R90</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-          <!-- Cinnamon & Sugar Pancake -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div
-                class="bg-image hover-overlay ripple"
-                data-mdb-ripple-color="light"
-              >
-                <img
-                  src="assets/images/pancakes.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="mask img-mask"></div>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Cinnamon & Sugar Pancake</h5>
-                <p class="card-text">
-                  Ever taken a bite from heaven? Here's your chance with the perfect balance between sweet & savoury. It
-                  will always have you coming back for more.
-                </p>
-                <table class="table table-sm">
-                  <thead>
-                    <tr>
-                      <th scope="col">6</th>
-                      <th scope="col">12</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>R40</td>
-                      <td>R80</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <!-- Strawberries & Cream -->
-          <div class="col-lg-4 col-md-12 mb-4">
-            <div class="card">
-              <div
-                class="bg-image hover-overlay ripple"
-                data-mdb-ripple-color="light"
-              >
-                <img
-                  src="assets/images/straw-cream.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="mask img-mask"></div>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Strawberries & Cream</h5>
-                <p class="card-text">
-                  We are taking it back to the basics with a twist on a popular dessert. You can have it all in a few
-                  simple bites.
-                </p>
-                <table class="table table-sm">
-                  <thead>
-                    <tr>
-                      <th scope="col">6</th>
-                      <th scope="col">12</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>R45</td>
-                      <td>R85</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-          <!-- Twix -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div
-                class="bg-image hover-overlay ripple"
-                data-mdb-ripple-color="light"
-              >
-                <img
-                  src="assets/images/twix.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="mask img-mask"></div>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Twix</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the
-                  card's content. dhjkfvbdvdvdv
-                </p>
-                <table class="table table-sm">
-                  <thead>
-                    <tr>
-                      <th scope="col">6</th>
-                      <th scope="col">12</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>R40</td>
-                      <td>R80</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-          <!-- Peanut Butter-->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div
-                class="bg-image hover-overlay ripple"
-                data-mdb-ripple-color="light"
-              >
-                <img
-                  src="https://mdbootstrap.com/img/new/standard/nature/111.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="mask img-mask"></div>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Peanut Butter</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the
-                  card's content. th thtyhgbnghnhnyu
-                </p>
-                <table class="table table-sm">
-                  <thead>
-                    <tr>
-                      <th scope="col">6</th>
-                      <th scope="col">12</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>R40</td>
-                      <td>R80</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- TODO: Red Velvet and 2 other flavour -->
-        <!-- <div class="row"></div> -->
       </section>
       <!-- Section: End Cookies -->
 
@@ -625,12 +190,30 @@
         class="my-5"
       />
 
+      <!-- Section: Start Menu -->
       <section>
-        <!-- TODO: Menu -->
         <div class="row text-center align-items-center">
-          Menu
+          <h4 class="mb-5"><strong>Menu</strong></h4>
+          <div class="table-responsive">
+            <table class="table table-hover table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Flavours</th>
+                  <th scope="col">Half-dozen</th>
+                  <th scope="col">Dozen</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let cookie of menu">
+                  <td>{{ cookie.flavour }}</td>
+                  <td *ngFor="let price of cookie.price">{{ price | currency:'R' }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
+      <!-- Section: End Menu -->
 
       <hr
         id="contact"
