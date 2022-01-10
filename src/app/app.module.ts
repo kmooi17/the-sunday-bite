@@ -21,6 +21,7 @@ import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+// TODO: Check what is being used
 const MdbModules = [
   MdbAccordionModule,
   MdbCarouselModule,

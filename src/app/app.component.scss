@@ -2,14 +2,19 @@
   background-color: rgba(251, 251, 251, 0.15);
 }
 
-.icon-colour {
-  color: black;
+.font-colour {
+  color: #4f4f4f;
 }
 
 .nav-colour {
-  background-color: beige;
+  background-color: #3cc6be;
 }
 
 .card-body {
-  background-color: lightgray;
+  &.one {
+    background-color: #90c4c0;
+  }
+  &.two {
+    background-color: #a6a6a6;
+  }
 }
