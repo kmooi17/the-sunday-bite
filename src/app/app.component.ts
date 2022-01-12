@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MdbModalRef, MdbModalService } from 'mdb-angular-ui-kit/modal';
+import { OrderModalComponent } from './order-modal/order-modal.component';
 
 @Component({
   selector: 'app-root',
@@ -65,14 +67,29 @@ export class AppComponent implements OnInit {
       active: true, image: 'twix', flavour: 'Twix',
       description: `Craving something caramel? We think Twix will satisfy that for you in a split second or even sooner...`,
       price: [50, 90], class: 'card-body two'
+    },
+    {
+      active: false, image: 'variety', flavour: 'Variety Box (any 12 flavours)',
+      description: ``,
+      price: [0, 100], class: 'card-body one'
     }
   ];
 
   menu: Cookies[] = [];
 
+  modalRef: MdbModalRef<OrderModalComponent> | undefined;
+
+  constructor(private modalService: MdbModalService) { }
+
   ngOnInit(): void {
     this.menu = this.cookies;
     this.cookies = this.cookies.filter((c: Cookies) => c.active);
+  }
+
+  openModal() {
+    this.modalRef = this.modalService.open(OrderModalComponent, {
+      modalClass: 'modal-dialog modal-xl'
+    })
   }
 }
 

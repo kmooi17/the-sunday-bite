@@ -20,6 +20,7 @@ import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { OrderModalComponent } from './order-modal/order-modal.component';
 
 // TODO: Check what is being used
 const MdbModules = [
@@ -42,7 +43,8 @@ const MdbModules = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OrderModalComponent
   ],
   imports: [
     BrowserModule,

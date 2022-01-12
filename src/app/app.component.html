@@ -38,8 +38,13 @@
           class="nav-link"
           href="#contact"
         >Contact</a>
-        <!-- TODO: Open new page -->
-        <a class="nav-link">Order App</a>
+
+        <a
+          style="cursor: pointer;"
+          class="nav-link"
+          (click)="openModal()"
+        >Order Form</a>
+
         <!-- TODO: When we have enough -->
         <!-- <a
           class="nav-link"
@@ -206,7 +211,7 @@
               <tbody>
                 <tr *ngFor="let cookie of menu">
                   <td>{{ cookie.flavour }}</td>
-                  <td *ngFor="let price of cookie.price">{{ price | currency:'R' }}</td>
+                  <td *ngFor="let price of cookie.price">{{ price != 0 ? (price | currency:'R') : '' }}</td>
                 </tr>
               </tbody>
             </table>
@@ -301,11 +306,9 @@
 
   <hr class="m-0" />
 
-  <!-- Footer -->
   <footer class="text-lg-start nav-colour">
     <div class="text-center py-4 align-items-center">
       <i>Created by Hybrid Apex Software Technologies (H.A.S.T.)</i>
     </div>
   </footer>
-  <!-- Footer -->
 </router-outlet>
