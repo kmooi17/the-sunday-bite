@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MdbModalRef, MdbModalService } from 'mdb-angular-ui-kit/modal';
-import { OrderModalComponent } from './order-modal/order-modal.component';
 
 @Component({
   selector: 'app-root',
@@ -75,21 +73,23 @@ export class AppComponent implements OnInit {
     }
   ];
 
+  deliveryPrices: DeliveryPrices[] = [
+    { where: 'Regular Customers', amount: 25 },
+    { where: 'Johannesburg', amount: 50 },
+    { where: 'Pretoria', amount: 75 }
+  ];
+
   menu: Cookies[] = [];
 
-  modalRef: MdbModalRef<OrderModalComponent> | undefined;
-
-  constructor(private modalService: MdbModalService) { }
+  constructor() { }
 
   ngOnInit(): void {
     this.menu = this.cookies;
     this.cookies = this.cookies.filter((c: Cookies) => c.active);
   }
 
-  openModal() {
-    this.modalRef = this.modalService.open(OrderModalComponent, {
-      modalClass: 'modal-dialog modal-xl'
-    })
+  openAppLink() {
+    // TODO: Point to order app
   }
 }
 
@@ -100,4 +100,9 @@ export type Cookies = {
   description: string,
   price: [number, number],
   class: string
+}
+
+export type DeliveryPrices = {
+  where: string,
+  amount: number
 }

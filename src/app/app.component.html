@@ -1,4 +1,4 @@
-<nav class="navbar sticky-top navbar-expand-lg navbar-light nav-colour">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light nav-colour">
   <div class="container-fluid">
     <button
       class="navbar-toggler"
@@ -39,11 +39,11 @@
           href="#contact"
         >Contact</a>
 
-        <a
+        <!-- <a
           style="cursor: pointer;"
           class="nav-link"
-          (click)="openModal()"
-        >Order Form</a>
+          (click)="openAppLink()"
+        >Order Form</a> -->
 
         <!-- TODO: When we have enough -->
         <!-- <a
@@ -57,7 +57,7 @@
 
 <!-- TODO: Choose new font -->
 <router-outlet>
-  <main class="mt-5">
+  <main>
     <div class="container">
 
       <!-- Section: Start Main -->
@@ -219,6 +219,32 @@
         </div>
       </section>
       <!-- Section: End Menu -->
+
+      <!-- Section: Start Delivery -->
+      <section class="text-center">
+        <p class="note">
+          <strong>Please note:</strong> Due to the cookies being freshly made, orders need to be placed at least 48
+          hours in advance. Thank you!
+        </p>
+        <h4 class="mb-5 mt-5">Delivery Pricing:</h4>
+
+        <div class="row">
+          <div
+            class="col-lg-4 col-md-6 mb-4"
+            *ngFor="let item of deliveryPrices"
+          >
+            <div class="card bg-light">
+              <div class="card-body">
+                <h5 class="card-title">{{ item.where }}</h5>
+                <p class="card-text">
+                  {{ item.amount | currency:'R' }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section: End Delivery -->
 
       <hr
         id="contact"
