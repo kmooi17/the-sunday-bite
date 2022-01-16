@@ -6,3 +6,10 @@
 
 // MDB SCSS
 @import "~mdb-angular-ui-kit/assets/scss/mdb.scss";
+
+:root {
+  html,
+  body {
+    background: #f3f0e5 !important;
+  }
+}

@@ -20,12 +20,12 @@ export class AppComponent implements OnInit {
     {
       active: true, image: 'candy-floss', flavour: 'Candyfloss',
       description: `Have you ever had a carnival in your mouth? Well now you can! You think it tastes great... wait until you smell it.`,
-      price: [50, 90], class: 'card-body two'
+      price: [50, 90], class: 'card-body three'
     },
     {
       active: true, image: 'coffee', flavour: 'Cappuccino',
       description: `Coffee lovers, this one is for you. Have you ever wanted to eat your coffee instead of drink it? Now's your chance.`,
-      price: [45, 85], class: 'card-body two'
+      price: [45, 85], class: 'card-body one'
     },
     {
       active: true, image: 'pancakes', flavour: 'Cinnamon & Sugar Pancake',
@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
     {
       active: true, image: 'mint', flavour: 'Choc Mint',
       description: `Love chocolate but find it too sweet? This is the perfect balance. Chocolate & Mint - name a better duo.`,
-      price: [40, 80], class: 'card-body one'
+      price: [40, 80], class: 'card-body three'
     },
     {
       active: true, image: 'choc', flavour: 'Death by Chocolate',
@@ -50,7 +50,7 @@ export class AppComponent implements OnInit {
     {
       active: true, image: 'oreos', flavour: 'Oreo Milkshake',
       description: `This cookie came to shake your taste buds awake. Two cookies for the price of one. A win-win kind of situation.`,
-      price: [50, 90], class: 'card-body one'
+      price: [50, 90], class: 'card-body three'
     },
     { active: false, image: 'peanut', flavour: 'Peanut Butter Surprise', description: '', price: [40, 80], class: 'card-body one' },
     { active: false, image: 'red-velvet', flavour: 'Red Velvet', description: '', price: [45, 85], class: 'card-body two' },
@@ -69,7 +69,7 @@ export class AppComponent implements OnInit {
     {
       active: false, image: 'variety', flavour: 'Variety Box (any 12 flavours)',
       description: ``,
-      price: [0, 100], class: 'card-body one'
+      price: [0, 100], class: 'card-body two'
     }
   ];
 

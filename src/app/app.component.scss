@@ -17,6 +17,9 @@
   &.two {
     background-color: #a6a6a6;
   }
+  &.three {
+    background-color: #c38fc8;
+  }
 }
 
 main {
@@ -35,4 +38,8 @@ main {
 
 hr {
   height: 2px;
+}
+
+a {
+  color: currentColor;
 }
