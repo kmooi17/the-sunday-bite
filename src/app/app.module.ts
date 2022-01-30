@@ -16,6 +16,8 @@ import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse';
 // import { MdbRadioModule } from 'mdb-angular-ui-kit/radio';
 // import { MdbRangeModule } from 'mdb-angular-ui-kit/range';
 import { MdbRippleModule } from 'mdb-angular-ui-kit/ripple';
+import { OrderFormComponent } from './order-form/order-form.component';
+import { MainComponent } from './main/main.component';
 // import { MdbScrollspyModule } from 'mdb-angular-ui-kit/scrollspy';
 // import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 // import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
@@ -41,7 +43,9 @@ const MdbModules = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OrderFormComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
