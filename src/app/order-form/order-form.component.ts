@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
+import { Subject } from 'rxjs';
+import { ScrollToService } from '../scroll-to.service';
 
 @Component({
   selector: 'app-order-form',
   templateUrl: './order-form.component.html',
   styleUrls: ['./order-form.component.scss']
 })
-export class OrderFormComponent implements OnInit {
+export class OrderFormComponent implements OnDestroy {
 
-  constructor() { }
+  #destroy$ = new Subject<void>();
 
-  ngOnInit(): void {
+  constructor(private scrollToService: ScrollToService) {
+    this.scrollToService.scrollTo.next(undefined);
+  }
+
+  ngOnDestroy(): void {
+    this.#destroy$.next();
+    this.#destroy$.complete()
   }
 
 }

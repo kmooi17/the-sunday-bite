@@ -1,11 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { Subject } from 'rxjs';
+import { MenuItemsEnum } from '../app.component';
+import { ScrollToService } from '../scroll-to.service';
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })
-export class MainComponent implements OnInit {
+export class MainComponent implements OnInit, OnDestroy {
+  @ViewChild('homeSection') homeSection!: ElementRef;
+  @ViewChild('aboutSection') aboutSection!: ElementRef;
+  @ViewChild('cookiesSection') cookiesSection!: ElementRef;
+  @ViewChild('menuSection') menuSection!: ElementRef;
+  @ViewChild('contactSection') contactSection!: ElementRef;
+
   cookies: Cookies[] = [
     {
       active: true, image: 'astros', flavour: 'Astronomical Swirl',
@@ -89,7 +98,31 @@ export class MainComponent implements OnInit {
 
   menu: Cookies[] = [];
 
-  constructor() { }
+  #destroy$ = new Subject<void>();
+
+  constructor(private scrollToService: ScrollToService) {
+    this.scrollToService.getScrollToId().subscribe((res: string) => {
+      switch (res) {
+        case MenuItemsEnum.HOME:
+          this.homeSection.nativeElement.scrollIntoView();
+          break;
+        case MenuItemsEnum.ABOUT:
+          this.aboutSection.nativeElement.scrollIntoView();
+          break;
+        case MenuItemsEnum.COOKIES:
+          this.cookiesSection.nativeElement.scrollIntoView();
+          break;
+        case MenuItemsEnum.MENU:
+          this.menuSection.nativeElement.scrollIntoView();
+          break;
+        case MenuItemsEnum.CONTACT:
+          this.contactSection.nativeElement.scrollIntoView();
+          break;
+        default:
+          break;
+      }
+    });
+  }
 
   ngOnInit(): void {
     this.menu = this.cookies;
@@ -97,6 +130,10 @@ export class MainComponent implements OnInit {
     this.cookies = this.cookies.filter((c: Cookies) => c.active);
   }
 
+  ngOnDestroy(): void {
+    this.#destroy$.next();
+    this.#destroy$.complete()
+  }
 }
 
 export type Cookies = {

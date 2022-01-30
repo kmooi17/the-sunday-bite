@@ -20,23 +20,23 @@
       <div class="navbar-nav ms-auto mb-2 mb-lg-0">
         <a
           class="nav-link"
-          href="#home"
+          (click)="goTo(MenuItemsEnum.HOME)"
         >Home</a>
         <a
           class="nav-link"
-          href="#about"
+          (click)="goTo(MenuItemsEnum.ABOUT)"
         >About</a>
         <a
           class="nav-link"
-          href="#cookies"
+          (click)="goTo(MenuItemsEnum.COOKIES)"
         >Gourmet Cookies</a>
         <a
           class="nav-link"
-          href="#menu"
+          (click)="goTo(MenuItemsEnum.MENU)"
         >Menu</a>
         <a
           class="nav-link"
-          href="#contact"
+          (click)="goTo(MenuItemsEnum.CONTACT)"
         >Contact</a>
 
         <a
@@ -56,5 +56,5 @@
 </nav>
 
 <!-- TODO: Choose new font & colour scheme -->
-<router-outlet>  
+<router-outlet>
 </router-outlet>
